@@ -1263,6 +1263,54 @@ Liste des blocs de cours par type_de_cours
         } */
 }
 
+.carrousel-2 .slide__conteneur:nth-of-type(1) .slide {
+  background-color: #5dff9b;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(2) .slide {
+  background-color: #ffc465;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(3) .slide {
+  background-color: #69cfff;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(4) .slide {
+  background-color: #d56aff;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(5) .slide {
+  background-color: #ff4e4e;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(6) .slide {
+  background-color: #56ff6d;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(1):hover .slide {
+  background-color: #a4ffc7;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(2):hover .slide {
+  background-color: #ffd592;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(3):hover .slide {
+  background-color: #a8e3ff;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(4):hover .slide {
+  background-color: #e298ff;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(5):hover .slide {
+  background-color: #ff8080;
+}
+
+.carrousel-2 .slide__conteneur:nth-of-type(6):hover .slide {
+  background-color: #96ffa4;
+}
+
 .carrousel-2 .slide__conteneur .slide {
   width: 100%;
   display: flex;
@@ -1303,54 +1351,6 @@ Liste des blocs de cours par type_de_cours
   text-decoration: none;
   justify-content: center;
   text-align: center;
-}
-
-.carrousel-2 .slide__conteneur .slide:nth-of-type(1) {
-  background-color: #5dff9b;
-}
-
-.carrousel-2 .slide__conteneur .slide:nth-of-type(2) {
-  background-color: #ffc465;
-}
-
-.carrousel-2 .slide__conteneur .slide:nth-of-type(3) {
-  background-color: #69cfff;
-}
-
-.carrousel-2 .slide__conteneur .slide:nth-of-type(4) {
-  background-color: #d56aff;
-}
-
-.carrousel-2 .slide__conteneur .slide:nth-of-type(5) {
-  background-color: #ff4e4e;
-}
-
-.carrousel-2 .slide__conteneur .slide:nth-of-type(6) {
-  background-color: #56ff6d;
-}
-
-.carrousel-2 .slide__conteneur .slide:nth-of-type(1):hover {
-  background-color: #a4ffc7;
-}
-
-.carrousel-2 .slide__conteneur .slide:nth-of-type(2):hover {
-  background-color: #ffd592;
-}
-
-.carrousel-2 .slide__conteneur .slide:nth-of-type(3):hover {
-  background-color: #a8e3ff;
-}
-
-.carrousel-2 .slide__conteneur .slide:nth-of-type(4):hover {
-  background-color: #e298ff;
-}
-
-.carrousel-2 .slide__conteneur .slide:nth-of-type(5):hover {
-  background-color: #ff8080;
-}
-
-.carrousel-2 .slide__conteneur .slide:nth-of-type(6):hover {
-  background-color: #96ffa4;
 }
 
 .ctrl-carrousel {
