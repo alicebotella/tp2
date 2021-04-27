@@ -1,0 +1,42 @@
+.site-footer {
+    background-color: $color__link;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    .ligne-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        ul {
+            margin-left: -5%;
+
+            a {
+            color: white;
+            text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .calendar_wrap {
+            a {
+                color: white;
+                text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+        }
+
+        .textwidget {
+            p {
+                margin-bottom: -2%;
+            }
+        }
+
+    } // fin ligne-footer
+}

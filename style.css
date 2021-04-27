@@ -663,6 +663,30 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+.site {
+  display: grid;
+  grid-template-columns: auto 25%;
+  grid-template-areas: "header header" "main sidebar" "footer footer";
+}
+
+.site-header {
+  grid-area: header;
+}
+
+.site-main {
+  grid-area: main;
+  overflow: hidden;
+  /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.widget-area {
+  grid-area: sidebar;
+}
+
+.site-footer {
+  grid-area: footer;
+}
+
 .no-sidebar .site {
   display: grid;
   grid-template-columns: auto;
@@ -680,7 +704,7 @@ textarea {
 	#colophon .site-footer	
 */
 .site-branding, #primary, #colophon {
-  margin-left: 3rem;
+  margin: 1rem;
 }
 
 #primary {
@@ -1135,6 +1159,7 @@ Liste des blocs de cours par type_de_cours
 
 .home .cours h2 {
   text-align: center;
+  font-size: 2rem;
 }
 
 .home .cours section.bloc {
@@ -1184,6 +1209,12 @@ Liste des blocs de cours par type_de_cours
     width: 31%;
     margin: 1%;
   }
+}
+
+.home .nouvelles {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 4% 2% 2%;
 }
 
 /* local carrousel
@@ -1583,6 +1614,7 @@ La barre du millieu
   justify-content: center;
   text-align: center;
   margin-top: -5%;
+  overflow: hidden;
 }
 
 .galerie h1 a {
@@ -1632,5 +1664,47 @@ La barre du millieu
 
 .page-header .archive-description p {
   margin: 0;
+}
+
+/* local footer
+--------------------------------------------- */
+.site-footer {
+  background-color: #4169e1;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-footer .ligne-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.site-footer .ligne-footer ul {
+  margin-left: -5%;
+}
+
+.site-footer .ligne-footer ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-footer .ligne-footer ul a:hover {
+  text-decoration: underline;
+}
+
+.site-footer .ligne-footer .calendar_wrap a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-footer .ligne-footer .calendar_wrap a:hover {
+  text-decoration: underline;
+}
+
+.site-footer .ligne-footer .textwidget p {
+  margin-bottom: -2%;
 }
 /*# sourceMappingURL=style.css.map */
