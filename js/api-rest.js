@@ -9,12 +9,12 @@
     {
     let maRequete = new XMLHttpRequest();
     console.log(maRequete)
-    maRequete.open('GET', 'http://localhost/4w4-3/wp-json/wp/v2/posts?categories=33&per_page=3'); //http://localhost:8080/4w4/wp-json/wp/v2/posts
+    maRequete.open('GET', 'http://localhost/4w4-3/wp-json/wp/v2/posts?categorie=34&per_page=3'); //http://localhost:8080/4w4/wp-json/wp/v2/posts
     maRequete.onload = function () {
         console.log(maRequete)
         if (maRequete.status >= 200 && maRequete.status < 400) {
             let data = JSON.parse(maRequete.responseText);
-            chaineResultat = ''
+            let chaineResultat = ''
             for (const elm of data) {
                 chaineResultat += '<h2>' + elm.title.rendered + '</h2>'
                 chaineResultat += elm.content.rendered
