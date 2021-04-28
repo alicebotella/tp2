@@ -1,5 +1,5 @@
 body.home{
-    background-color : fff;
+    background-color : #fff;
     height : 500vh;
     width : 100vw;
     overflow-x :hidden;
@@ -112,7 +112,23 @@ Liste des blocs de cours par type_de_cours
     margin: 2% 4% 2% 2%;
 
     section {
-        
-    }
+
+        .wp-block-columns {
+            .wp-block-column {
+                justify-content: center;
+                align-items: center;
+
+                p {
+                    text-align: justify;
+                }
+
+                .wp-block-image {
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 10%;
+                }
+            }
+        }
+    } //fin section
 }
 

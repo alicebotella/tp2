@@ -1103,7 +1103,7 @@ menu tablet
 /* local
 --------------------------------------------- */
 body.home {
-  background-color: fff;
+  background-color: #fff;
   height: 500vh;
   width: 100vw;
   overflow-x: hidden;
@@ -1215,6 +1215,21 @@ Liste des blocs de cours par type_de_cours
   display: flex;
   flex-direction: column;
   margin: 2% 4% 2% 2%;
+}
+
+.home .nouvelles section .wp-block-columns .wp-block-column {
+  justify-content: center;
+  align-items: center;
+}
+
+.home .nouvelles section .wp-block-columns .wp-block-column p {
+  text-align: justify;
+}
+
+.home .nouvelles section .wp-block-columns .wp-block-column .wp-block-image {
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
 }
 
 /* local carrousel
