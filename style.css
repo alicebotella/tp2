@@ -1682,6 +1682,7 @@ La barre du millieu
 }
 
 /* local footer
+
 --------------------------------------------- */
 .site-footer {
   background-color: #4169e1;
@@ -1721,5 +1722,12 @@ La barre du millieu
 
 .site-footer .ligne-footer .textwidget p {
   margin-bottom: -2%;
+}
+
+/* local formulaire
+--------------------------------------------- */
+.admin-rapide {
+  width: 70%;
+  margin: 2% 4% 2% 3%;
 }
 /*# sourceMappingURL=style.css.map */

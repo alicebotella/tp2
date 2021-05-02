@@ -190,6 +190,10 @@ function theme4w4_scripts() {
 	//	wp_enqueue_script( 'theme4w4-carrousel');
 		wp_enqueue_script( 'theme4w4-slider');
 		wp_enqueue_script( 'theme4w4-api-rest');
+		wp_localize_script( 'theme4w4-api-rest', 'monObjJS', array(
+			'nonce' => wp_create_nonce( 'rest' ),
+			'siteURL' => get_site_url()
+		));
 	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
