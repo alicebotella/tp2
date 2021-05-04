@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: theme4w4
 Theme URI: http://underscores.me/
@@ -665,12 +666,21 @@ textarea {
 --------------------------------------------------------------*/
 .site {
   display: grid;
-  grid-template-columns: auto 25%;
-  grid-template-areas: "header header" "main sidebar" "footer footer";
+  /* Il faut régler les proportions avec deux pourcentages */
+  grid-template-columns: 100%;
+  grid-template-areas: "header header" "main main" "sidebar sidebar" "footer footer";
+}
+
+@media (min-width: 1200px) {
+  .site {
+    grid-template-columns: 80% 20%;
+    grid-template-areas: "header header" "main sidebar" "footer footer";
+  }
 }
 
 .site-header {
   grid-area: header;
+  height: 28vh;
 }
 
 .site-main {
@@ -681,6 +691,7 @@ textarea {
 
 .widget-area {
   grid-area: sidebar;
+  background-color: #eee;
 }
 
 .site-footer {
@@ -1590,7 +1601,6 @@ La barre du millieu
   width: 150px;
   height: 150px;
   perspective: 1000px;
-  border-radius: 20px;
 }
 
 .galerie .flip-card-inner {
@@ -1617,7 +1627,6 @@ La barre du millieu
 .galerie .flip-card-front {
   background-color: #bbb;
   color: black;
-  border-radius: 20px;
 }
 
 .galerie .flip-card-back {
@@ -1665,23 +1674,23 @@ La barre du millieu
   font-size: clamp(0.6rem, -0.875rem + 8.333vw, 1.5rem);
 }
 
-.page-header {
-  margin-top: 130px;
+.page-header, .entry-header {
+  margin-top: 70px;
 }
 
-.page-header .page-title {
+.page-header .page-title, .page-header .entry-title, .entry-header .page-title, .entry-header .entry-title {
   font-size: 4rem;
   color: #af2929;
   margin-bottom: 0;
   margin-top: -5%;
 }
 
-.page-header .archive-description {
+.page-header .archive-description, .entry-header .archive-description {
   font-size: 1rem;
   color: #6b767a;
 }
 
-.page-header .archive-description p {
+.page-header .archive-description p, .entry-header .archive-description p {
   margin: 0;
 }
 
@@ -1733,5 +1742,23 @@ La barre du millieu
 .admin-rapide {
   width: 70%;
   margin: 2% 4% 2% 3%;
+}
+
+/* local sidebar
+--------------------------------------------- */
+#secondary {
+  padding-left: 8%;
+  padding-right: 5%;
+}
+
+@media (min-width: 1200px) {
+  #secondary {
+    margin-top: -10%;
+  }
+}
+
+#gallery-1 {
+  justify-content: center;
+  align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
