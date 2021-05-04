@@ -9,7 +9,7 @@
     {
     let maRequete = new XMLHttpRequest();
     console.log(maRequete)
-    maRequete.open('GET', monObjJS.siteURL + '/wp-json/wp/v2/posts?categorie=34&order=desc'); //http://localhost:8080/4w4/wp-json/wp/v2/posts | /wp-json/wp/v2/posts?categorie=34&per_page=3
+    maRequete.open('GET', monObjJS.siteURL + '/wp-json/wp/v2/posts?per_page=3'); //http://localhost:8080/4w4/wp-json/wp/v2/posts | /wp-json/wp/v2/posts?categorie=34&per_page=3
     maRequete.onload = function () {
         console.log(maRequete)
         if (maRequete.status >= 200 && maRequete.status < 400) {
