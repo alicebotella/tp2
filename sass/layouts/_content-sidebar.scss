@@ -1,14 +1,24 @@
 .site {
 	display: grid;
-	grid-template-columns: auto ($size__site-sidebar); //80% 20%;
+	/* Il faut régler les proportions avec deux pourcentages */
+	grid-template-columns: 100%;
+	grid-template-areas:
+		"header header"
+		"main main"
+		"sidebar sidebar"
+		"footer footer";
+	@include desktop {
+	grid-template-columns: 80% 20%;
 	grid-template-areas:
 		"header header"
 		"main sidebar"
 		"footer footer";
+	}
 }
 
 .site-header {
 	grid-area: header;
+	height: 28vh;
 }
 
 .site-main {
@@ -18,6 +28,7 @@
 
 .widget-area {
 	grid-area: sidebar;
+	background-color: #eee;
 }
 
 .site-footer {

@@ -15,10 +15,10 @@
     font-size: clamp(.6rem, #{"-0.875rem + 8.333vw"},1.5rem);
 }
 
-.page-header {
-    margin-top: 130px;
+.page-header, .entry-header {
+    margin-top: 30px; //130
 
-    .page-title {
+    .page-title, .entry-title {
         font-size: 4rem;
         color: rgb(175, 41, 41);
         margin-bottom: 0;
