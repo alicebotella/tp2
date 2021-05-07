@@ -16,6 +16,7 @@ get_header();
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
+			<section id="annonce">Annonce</section>
 				<h1 class="page-title"> Accueil </h1>
 				<?php
 				//the_archive_title( '<h1 class="page-title">', '</h1>' );
