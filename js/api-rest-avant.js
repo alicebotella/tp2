@@ -1,19 +1,15 @@
 (function(){
 	let bouton = document.getElementById('bout_nouvelles')
     let nouvelles = document.querySelector('.nouvelles section')
-    let annonce = document.getElementById('annonce')
     /* bouton.addEventListener('mousedown', monAjax) */
-    window.addEventListener('load', function() {
-        monAjax( monObjJS.siteURL + '/wp-json/wp/v2/posts?categorie=34&order=desc', nouvelles) //per_page=3
-        monAjax( monObjJS.siteURL + '/wp-json/wp/v2/posts?categorie=35&order=desc&per_page=1', annonce)
-    })
+    window.addEventListener('load', monAjax)
 
 
-    function monAjax(requete, elmDom)
+    function monAjax()
     {
     let maRequete = new XMLHttpRequest();
     console.log(maRequete)
-    maRequete.open('GET', requete ); 
+    maRequete.open('GET', monObjJS.siteURL + '/wp-json/wp/v2/posts?per_page=3'); //http://localhost:8080/4w4/wp-json/wp/v2/posts | /wp-json/wp/v2/posts?categorie=34&per_page=3
     maRequete.onload = function () {
         console.log(maRequete)
         if (maRequete.status >= 200 && maRequete.status < 400) {
@@ -23,8 +19,7 @@
                 chaineResultat += '<h2>' + elm.title.rendered + '</h2>'
                 chaineResultat += elm.content.rendered
             }
-            elmDom.innerHTML = chaineResultat;
-            /* annonce.innerHTML = chaineResultat; */
+            nouvelles.innerHTML = chaineResultat;
         }
         
         else {
@@ -47,7 +42,7 @@
             "title" : document.querySelector('.admin-rapide [name="title"]').value,
             "content" : document.querySelector('.admin-rapide [name="content"]').value,
             "status" : "publish",
-            "categories" : [35]
+            "categories" : [34]
         }
         console.log(monArticle)
 
