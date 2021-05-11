@@ -6,6 +6,17 @@
     a {
         text-decoration: none;
     }
+
+    a:hover {
+        animation: anim-title 10s infinite alternate;
+
+    }
+
+    @keyframes anim-title {
+        0% {font-size: 3rem};
+        50% {font-size: 2.8rem};
+        100% {font-size: 3rem};
+    }
 }
 
 .site-description {
