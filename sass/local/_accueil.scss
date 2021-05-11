@@ -136,6 +136,15 @@ Liste des blocs de cours par type_de_cours
 
 #annonce {
     margin-top: 20px;
-    background-color: #ddd;
-    height: 10vh;
+    padding: 5px;
+    color: rgb(95, 95, 95);
+    //height: 10vh; --> sans height, donne une hauteur adaptable
+    animation: color-popup 1s linear infinite alternate both;
+}
+
+@keyframes color-popup {
+    0% {background-color: rgb(255, 165, 165);}
+    25% {background-color: rgb(255, 121, 121);}
+    50% {background-color: rgb(255, 121, 121);}
+    100% {background-color: rgb(255, 165, 165);}
 }

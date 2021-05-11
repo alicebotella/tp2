@@ -1247,8 +1247,24 @@ Liste des blocs de cours par type_de_cours
 
 #annonce {
   margin-top: 20px;
-  background-color: #ddd;
-  height: 10vh;
+  padding: 5px;
+  color: #5f5f5f;
+  animation: color-popup 1s linear infinite alternate both;
+}
+
+@keyframes color-popup {
+  0% {
+    background-color: #ffa5a5;
+  }
+  25% {
+    background-color: #ff7979;
+  }
+  50% {
+    background-color: #ff7979;
+  }
+  100% {
+    background-color: #ffa5a5;
+  }
 }
 
 /* local carrousel
