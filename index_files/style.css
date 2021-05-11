@@ -1634,12 +1634,14 @@ La barre du millieu
 .galerie .flip-card-front {
   background-color: #bbb;
   color: black;
+  border-radius: 20px;
 }
 
 .galerie .flip-card-back {
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+  border-radius: 15px;
 }
 
 .galerie h1 {
@@ -1655,6 +1657,7 @@ La barre du millieu
 .galerie h1 a {
   text-decoration: none;
   color: #c2c2c2;
+  margin-top: 5%;
 }
 
 .galerie h1 a:hover {

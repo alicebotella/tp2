@@ -30,25 +30,67 @@
         &:nth-of-type(6) .slide{
             background-color: rgb(255, 196, 101);
         }
-
+        
         //hover
         &:nth-of-type(1):hover .slide{
             background-color: rgb(164, 255, 199);
+            animation: slide1 2s linear infinite alternate both;
         }
         &:nth-of-type(2):hover .slide{
             background-color: rgb(168, 227, 255);
+            animation: slide2 2s linear infinite alternate both;
         }
         &:nth-of-type(3):hover .slide{
             background-color: rgb(226, 152, 255);
+            animation: slide3 2s linear infinite alternate both;
         }
         &:nth-of-type(4):hover .slide{
             background-color: rgb(255, 152, 224);
+            animation: slide4 2s linear infinite alternate both;
         }
         &:nth-of-type(5):hover .slide{
             background-color: rgb(255, 128, 128);
+            animation: slide5 2s linear infinite alternate both;
         }
         &:nth-of-type(6):hover .slide{
             background-color: rgb(255, 213, 146);
+            animation: slide6 2s linear infinite alternate both;
+        }
+
+        //animation bg slider 1
+        @keyframes slide1 {
+            0% {background-color: rgb(93, 255, 155);}
+            100% {background-color: rgb(73, 199, 121);}
+        }
+
+        //animation bg slider 2
+        @keyframes slide2 {
+            0% {background-color: rgb(105, 207, 255);}
+            100% {background-color: rgb(76, 155, 192);}
+        }
+
+        //animation bg slider 3
+        @keyframes slide3 {
+            0% {background-color: rgb(213, 106, 255);}
+            100% {background-color: rgb(177, 87, 212);}
+        }
+
+        //animation bg slider 4
+        @keyframes slide4 {
+            0% {background-color: rgb(253, 112, 211);}
+            100% {background-color: rgb(199, 82, 164);}
+        }
+
+        //animation bg slider 5
+        @keyframes slide5 {
+            0% {background-color: rgb(255, 78, 78);}
+            100% {background-color: rgb(221, 68, 68);}
+        }
+
+        //animation bg slider 6
+        @keyframes slide6 {
+            0% {background-color: rgb(255, 196, 101);}
+            100% {background-color: rgb(206, 145, 49);}
         }
         
         .slide {
@@ -89,6 +131,7 @@
                     text-decoration: none;
                     justify-content: center;
                     text-align: center;
+                    color: black;
                 }
             } //fin slide__info
 
