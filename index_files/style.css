@@ -1247,8 +1247,24 @@ Liste des blocs de cours par type_de_cours
 
 #annonce {
   margin-top: 20px;
-  background-color: #ddd;
-  height: 10vh;
+  padding: 5px;
+  color: #5f5f5f;
+  animation: color-popup 1s linear infinite alternate both;
+}
+
+@keyframes color-popup {
+  0% {
+    background-color: #ffa5a5;
+  }
+  25% {
+    background-color: #ff7979;
+  }
+  50% {
+    background-color: #ff7979;
+  }
+  100% {
+    background-color: #ffa5a5;
+  }
 }
 
 /* local carrousel
@@ -1354,26 +1370,86 @@ Liste des blocs de cours par type_de_cours
 
 .carrousel-2 .slide__conteneur:nth-of-type(1):hover .slide {
   background-color: #a4ffc7;
+  animation: slide1 2s linear infinite alternate both;
 }
 
 .carrousel-2 .slide__conteneur:nth-of-type(2):hover .slide {
   background-color: #a8e3ff;
+  animation: slide2 2s linear infinite alternate both;
 }
 
 .carrousel-2 .slide__conteneur:nth-of-type(3):hover .slide {
   background-color: #e298ff;
+  animation: slide3 2s linear infinite alternate both;
 }
 
 .carrousel-2 .slide__conteneur:nth-of-type(4):hover .slide {
   background-color: #ff98e0;
+  animation: slide4 2s linear infinite alternate both;
 }
 
 .carrousel-2 .slide__conteneur:nth-of-type(5):hover .slide {
   background-color: #ff8080;
+  animation: slide5 2s linear infinite alternate both;
 }
 
 .carrousel-2 .slide__conteneur:nth-of-type(6):hover .slide {
   background-color: #ffd592;
+  animation: slide6 2s linear infinite alternate both;
+}
+
+@keyframes slide1 {
+  0% {
+    background-color: #5dff9b;
+  }
+  100% {
+    background-color: #49c779;
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    background-color: #69cfff;
+  }
+  100% {
+    background-color: #4c9bc0;
+  }
+}
+
+@keyframes slide3 {
+  0% {
+    background-color: #d56aff;
+  }
+  100% {
+    background-color: #b157d4;
+  }
+}
+
+@keyframes slide4 {
+  0% {
+    background-color: #fd70d3;
+  }
+  100% {
+    background-color: #c752a4;
+  }
+}
+
+@keyframes slide5 {
+  0% {
+    background-color: #ff4e4e;
+  }
+  100% {
+    background-color: #dd4444;
+  }
+}
+
+@keyframes slide6 {
+  0% {
+    background-color: #ffc465;
+  }
+  100% {
+    background-color: #ce9131;
+  }
 }
 
 .carrousel-2 .slide__conteneur .slide {
@@ -1417,6 +1493,7 @@ Liste des blocs de cours par type_de_cours
   text-decoration: none;
   justify-content: center;
   text-align: center;
+  color: black;
 }
 
 .ctrl-carrousel {
