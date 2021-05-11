@@ -16,19 +16,19 @@
             background-color: rgb(93, 255, 155);
         }
         &:nth-of-type(2) .slide{
-            background-color: rgb(255, 196, 101);
-        }
-        &:nth-of-type(3) .slide{
             background-color: rgb(105, 207, 255);
         }
-        &:nth-of-type(4) .slide{
+        &:nth-of-type(3) .slide{
             background-color: rgb(213, 106, 255);
+        }
+        &:nth-of-type(4) .slide{
+            background-color: rgb(253, 112, 211);
         }
         &:nth-of-type(5) .slide{
             background-color: rgb(255, 78, 78);
         }
         &:nth-of-type(6) .slide{
-            background-color: rgb(86, 255, 109);
+            background-color: rgb(255, 196, 101);
         }
 
         //hover
@@ -36,19 +36,19 @@
             background-color: rgb(164, 255, 199);
         }
         &:nth-of-type(2):hover .slide{
-            background-color: rgb(255, 213, 146);
-        }
-        &:nth-of-type(3):hover .slide{
             background-color: rgb(168, 227, 255);
         }
-        &:nth-of-type(4):hover .slide{
+        &:nth-of-type(3):hover .slide{
             background-color: rgb(226, 152, 255);
+        }
+        &:nth-of-type(4):hover .slide{
+            background-color: rgb(255, 152, 224);
         }
         &:nth-of-type(5):hover .slide{
             background-color: rgb(255, 128, 128);
         }
         &:nth-of-type(6):hover .slide{
-            background-color: rgb(150, 255, 164);
+            background-color: rgb(255, 213, 146);
         }
         
         .slide {
@@ -68,6 +68,7 @@
             img{
                 display : block;
                 margin : 2%;
+                border-radius: 10px;
             }
 
             .slide__info{
