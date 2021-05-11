@@ -62,12 +62,14 @@
     .flip-card-front {
         background-color: #bbb;
         color: black;
+        border-radius: 20px;
     }
 
     .flip-card-back {
         background-color: #2980b9;
         color: white;
         transform: rotateY(180deg);
+        border-radius: 15px;
     }
 
 
@@ -83,6 +85,7 @@
         a {
             text-decoration: none;
             color: rgb(194, 194, 194);
+            margin-top: 5%;
         }
 
         a:hover {
