@@ -1249,7 +1249,7 @@ Liste des blocs de cours par type_de_cours
   margin-top: 20px;
   padding: 5px;
   color: #5f5f5f;
-  animation: color-popup 1s linear infinite alternate both;
+  animation: color-popup 5s linear infinite alternate both;
 }
 
 @keyframes color-popup {

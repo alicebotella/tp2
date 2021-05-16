@@ -1,12 +1,12 @@
-TP2
+Site du TIM - TP2
 
-Alice Botella-Vigneault
+Réalisé par: Alice Botella-Vigneault
 
 TIM 2021 - 4w4
 
-Groupe 1
+Groupe du lundi-1
 
-Site du TIM avec la grille des cours offerts et une galerie d'images de projets
+Le site du TIM est réalisé à l'aide de WordPress. Il contient de nombreuses sections pouvant informer le visiteur.
 
 Dépôt: https://github.com/alicebotella/labo10
 

@@ -139,7 +139,7 @@ Liste des blocs de cours par type_de_cours
     padding: 5px;
     color: rgb(95, 95, 95);
     //height: 10vh; --> sans height, donne une hauteur adaptable
-    animation: color-popup 1s linear infinite alternate both;
+    animation: color-popup 5s linear infinite alternate both;
 }
 
 @keyframes color-popup {
